@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natuni - Produtos Naturais para sua Saúde</title>
+    <meta name="description" content="Natuni oferece produtos naturais de alta qualidade como Magnati e Visionati. Cuide da sua saúde com suplementos naturais.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <img src="assets/images/logo-natuni.png" alt="Natuni" class="logo">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#benefits">Benefícios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-whatsapp" href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os produtos Natuni" target="_blank">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-pattern"></div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <i class="fas fa-leaf"></i>
+                            <span>100% Natural & Certificado</span>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            Cuide da sua <span class="text-gradient">saúde</span> 
+                            com produtos <span class="text-gradient-secondary">naturais</span>
+                        </h1>
+                        
+                        <p class="hero-subtitle">
+                            Descubra o poder da natureza com nossos suplementos de alta qualidade. 
+                            <strong>Magnati e Visionati</strong>: sua jornada para uma vida mais saudável começa aqui.
+                        </p>
+                        
+                        <div class="hero-promo">
+                            <div class="promo-badge">
+                                <i class="fas fa-fire"></i>
+                                <span>PROMOÇÃO ESPECIAL</span>
+                            </div>
+                            <p>Compre os 2 produtos e ganhe <strong>BRINDE EXCLUSIVO</strong> + Frete Grátis!</p>
+                        </div>
+                        
+                        <div class="hero-buttons">
+                            <a href="#products" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-shopping-bag"></i>
+                                Ver Promoção
+                            </a>
+                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre a promoção dos produtos Natuni" 
+                               class="btn btn-outline-light btn-lg" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Fale Conosco
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <div class="product-showcase">
+                            <img src="assets/images/hero-products.png" alt="Produtos Natuni" class="img-fluid main-product">
+                            <div class="floating-elements">
+                                <div class="floating-icon floating-icon-1">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="floating-icon floating-icon-2">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="floating-icon floating-icon-3">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="assets/images/about-natuni.jpg" alt="Sobre a Natuni" class="img-fluid rounded-3">
+                        <div class="about-decoration">
+                            <div class="decoration-circle"></div>
+                            <div class="decoration-dots"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2 class="section-title">Sobre a <span class="text-primary">Natuni</span></h2>
+                        <p class="section-subtitle">
+                            Nascemos com a missão de democratizar o acesso a produtos naturais de alta qualidade, 
+                            promovendo saúde e bem-estar através da força da natureza.
+                        </p>
+                        
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>100% Natural</h4>
+                                    <p>Produtos desenvolvidos com ingredientes naturais selecionados</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Certificado</h4>
+                                    <p>Todos os nossos produtos possuem certificação de qualidade</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Cuidado Integral</h4>
+                                    <p>Focamos no seu bem-estar completo, corpo e mente</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Nossos <span class="text-primary">Produtos</span></h2>
+                <p class="section-subtitle">
+                    Conheça nossa linha completa de suplementos naturais desenvolvidos para cuidar da sua saúde
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Magnati -->
+                <div class="col-lg-6">
+                    <div class="product-card">
+                        <div class="product-badge">
+                            <i class="fas fa-star"></i>
+                            <span>Mais Vendido</span>
+                        </div>
+                        
+                        <div class="product-image">
+                            <img src="assets/images/magnati-produto.png" alt="Magnati" class="img-fluid">
+                            <div class="product-overlay">
+                                <a href="produtos.html#magnati" class="btn btn-light">
+                                    <i class="fas fa-eye"></i> Ver Detalhes
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="product-content">
+                            <h3 class="product-title">Magnati</h3>
+                            <p class="product-description">
+                                Suplemento natural rico em magnésio, essencial para o funcionamento adequado 
+                                dos músculos, nervos e manutenção de ossos saudáveis.
+                            </p>
+                            
+                            <div class="product-benefits">
+                                <div class="benefit-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Fortalece ossos e músculos</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Melhora o sono</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Reduz o estresse</span>
+                                </div>
+                            </div>
+                            
+                            <div class="product-price">
+                                <span class="price-old">R$ 89,90</span>
+                                <span class="price-current">R$ 67,90</span>
+                                <span class="price-discount">24% OFF</span>
+                            </div>
+                            
+                            <div class="product-actions">
+                                <a href="https://wa.me/5511999999999?text=Olá! Gostaria de comprar o Magnati" 
+                                   class="btn btn-primary btn-block" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Comprar Agora
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Visionati -->
+                <div class="col-lg-6">
+                    <div class="product-card">
+                        <div class="product-badge badge-new">
+                            <i class="fas fa-sparkles"></i>
+                            <span>Novidade</span>
+                        </div>
+                        
+                        <div class="product-image">
+                            <img src="assets/images/visionati-produto.png" alt="Visionati" class="img-fluid">
+                            <div class="product-overlay">
+                                <a href="produtos.html#visionati" class="btn btn-light">
+                                    <i class="fas fa-eye"></i> Ver Detalhes
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="product-content">
+                            <h3 class="product-title">Visionati</h3>
+                            <p class="product-description">
+                                Fórmula avançada para saúde ocular, com luteína, zeaxantina e vitaminas 
+                                essenciais para manter sua visão saudável e protegida.
+                            </p>
+                            
+                            <div class="product-benefits">
+                                <div class="benefit-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Protege a visão</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Reduz fadiga ocular</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Antioxidante natural</span>
+                                </div>
+                            </div>
+                            
+                            <div class="product-price">
+                                <span class="price-old">R$ 94,90</span>
+                                <span class="price-current">R$ 71,90</span>
+                                <span class="price-discount">24% OFF</span>
+                            </div>
+                            
+                            <div class="product-actions">
+                                <a href="https://wa.me/5511999999999?text=Olá! Gostaria de comprar o Visionati" 
+                                   class="btn btn-primary btn-block" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Comprar Agora
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Combo Promotion -->
+            <div class="combo-section mt-5">
+                <div class="combo-card">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="combo-header">
+                                <div class="combo-badge">
+                                    <i class="fas fa-gift"></i>
+                                    <span>OFERTA ESPECIAL</span>
+                                </div>
+                                <h3 class="combo-title">Combo Saúde Completa</h3>
+                                <p class="combo-subtitle">Magnati + Visionati + Brinde Exclusivo</p>
+                                
+                                <div class="combo-description">
+                                    <p>Potencialize seus resultados com o combo perfeito para sua saúde completa. Adquira o Magnati e o Visionati juntos e garanta:</p>
+                                </div>
+                                
+                                <div class="combo-benefits">
+                                    <div class="benefit-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Fortalecimento de ossos e músculos</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Proteção e saúde ocular</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Redução do estresse e fadiga</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Melhora do sono e disposição</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="combo-price-container">
+                                    <div class="combo-price">
+                                        <div class="price-comparison">
+                                            <span class="price-separate">De <strike>R$ 184,80</strike> por apenas:</span>
+                                            <span class="price-combo">R$ 129,90</span>
+                                            <span class="price-installment">ou 12x de R$ 10,82</span>
+                                        </div>
+                                        <div class="price-savings">
+                                            <i class="fas fa-tag"></i> Você economiza R$ 54,90!
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="combo-action">
+                                        <a href="https://wa.me/5511999999999?text=Olá! Gostaria de comprar o Combo Saúde Completa (Magnati + Visionati + Brinde)" 
+                                           class="btn btn-success btn-lg" target="_blank">
+                                            <i class="fab fa-whatsapp"></i> Comprar Combo Agora
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6">
+                            <div class="combo-image-container">
+                                <div class="combo-products">
+                                    <div class="combo-product">
+                                        <img src="assets/images/magnati-produto.png" alt="Magnati" class="img-fluid">
+                                    </div>
+                                    <div class="combo-plus">+</div>
+                                    <div class="combo-product">
+                                        <img src="assets/images/visionati-produto.png" alt="Visionati" class="img-fluid">
+                                    </div>
+                                </div>
+                                
+                                <div class="combo-extras">
+                                    <div class="combo-extra-item">
+                                        <i class="fas fa-shipping-fast"></i>
+                                        <span>Frete Grátis</span>
+                                    </div>
+                                    <div class="combo-extra-item">
+                                        <i class="fas fa-gift"></i>
+                                        <span>Brinde Exclusivo</span>
+                                    </div>
+                                    <div class="combo-extra-item">
+                                        <i class="fas fa-percentage"></i>
+                                        <span>30% de Desconto</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Por que escolher a <span class="text-primary">Natuni</span>?</h2>
+                <p class="section-subtitle">
+                    Oferecemos muito mais que produtos naturais. Oferecemos uma experiência completa de cuidado com sua saúde.
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4 class="benefit-title">100% Natural</h4>
+                        <p class="benefit-description">
+                            Todos os nossos produtos são desenvolvidos com ingredientes naturais, 
+                            sem aditivos químicos prejudiciais à sua saúde.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4 class="benefit-title">Certificação de Qualidade</h4>
+                        <p class="benefit-description">
+                            Nossos produtos possuem todas as certificações necessárias e 
+                            passam por rigorosos testes de qualidade.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h4 class="benefit-title">Entrega Rápida</h4>
+                        <p class="benefit-description">
+                            Entregamos seus produtos com rapidez e segurança. 
+                            Frete grátis para compras acima de R$ 99,00.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4 class="benefit-title">Suporte Especializado</h4>
+                        <p class="benefit-description">
+                            Nossa equipe está sempre pronta para tirar suas dúvidas e 
+                            orientar sobre o melhor uso dos produtos.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4 class="benefit-title">Garantia de Satisfação</h4>
+                        <p class="benefit-description">
+                            Oferecemos garantia total de satisfação. Se não ficar satisfeito, 
+                            devolvemos seu dinheiro.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4 class="benefit-title">Cuidado Personalizado</h4>
+                        <p class="benefit-description">
+                            Cada cliente é único. Oferecemos orientação personalizada 
+                            para suas necessidades específicas de saúde.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Testimonials Section -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Depoimentos dos nossos <span class="text-primary">clientes</span></h2>
+                <p class="section-subtitle">
+                    Veja o que nossos clientes têm a dizer sobre os resultados dos nossos produtos
+                </p>
+            </div>
+            
+            <div class="testimonials-container">
+                <div class="row g-4">
+                    <!-- Testimonial 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="assets/images/testimonial-1.jpg" alt="Maria Silva">
+                                </div>
+                                <div class="testimonial-info">
+                                    <h4 class="testimonial-name">Maria Silva</h4>
+                                    <p class="testimonial-location">São Paulo, SP</p>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <p class="testimonial-text">
+                                    "O Magnati mudou completamente minha qualidade de vida. Depois de 2 semanas de uso, não tenho mais dores musculares e durmo muito melhor! Recomendo para todos que sofrem com câibras e dores nas pernas."
+                                </p>
+                            </div>
+                            <div class="testimonial-product">
+                                <span>Produto:</span> <strong>Magnati</strong>
+                            </div>
+                            <div class="testimonial-date">
+                                <i class="far fa-calendar-alt"></i> Maio 2024
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="assets/images/testimonial-2.jpg" alt="João Santos">
+                                </div>
+                                <div class="testimonial-info">
+                                    <h4 class="testimonial-name">João Santos</h4>
+                                    <p class="testimonial-location">Rio de Janeiro, RJ</p>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <p class="testimonial-text">
+                                    "Trabalho muito no computador e o Visionati foi essencial para reduzir o cansaço visual. Depois de um mês de uso, percebi uma melhora significativa no conforto dos meus olhos durante longas horas de trabalho. Recomendo!"
+                                </p>
+                            </div>
+                            <div class="testimonial-product">
+                                <span>Produto:</span> <strong>Visionati</strong>
+                            </div>
+                            <div class="testimonial-date">
+                                <i class="far fa-calendar-alt"></i> Abril 2024
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="assets/images/testimonial-3.jpg" alt="Ana Costa">
+                                </div>
+                                <div class="testimonial-info">
+                                    <h4 class="testimonial-name">Ana Costa</h4>
+                                    <p class="testimonial-location">Belo Horizonte, MG</p>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <p class="testimonial-text">
+                                    "Comprei o combo e foi a melhor decisão! Os dois produtos são excelentes e o atendimento é impecável. Minha disposição melhorou muito e minha visão está muito mais confortável. Além disso, o brinde foi uma surpresa maravilhosa!"
+                                </p>
+                            </div>
+                            <div class="testimonial-product">
+                                <span>Produto:</span> <strong>Combo Saúde Completa</strong>
+                            </div>
+                            <div class="testimonial-date">
+                                <i class="far fa-calendar-alt"></i> Junho 2024
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials-cta text-center mt-5">
+                    <p class="testimonials-cta-text">Junte-se a milhares de clientes satisfeitos e transforme sua saúde</p>
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os produtos Natuni" class="btn btn-primary btn-lg" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Falar com um Especialista
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Entre em <span class="text-primary">Contato</span></h2>
+                <p class="section-subtitle">
+                    Estamos aqui para ajudar você a cuidar da sua saúde. Fale conosco!
+                </p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <div class="contact-info-card">
+                            <div class="contact-info-header">
+                                <h3>Fale com a Natuni</h3>
+                                <p>Tire suas dúvidas, solicite informações ou faça seu pedido pelos nossos canais de atendimento:</p>
+                            </div>
+                            
+                            <div class="contact-info-items">
+                                <div class="contact-info-item">
+                                    <div class="contact-icon">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </div>
+                                    <div class="contact-content">
+                                        <h4>WhatsApp</h4>
+                                        <p>(11) 99999-9999</p>
+                                        <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-success btn-sm">
+                                            <i class="fab fa-whatsapp"></i> Conversar agora
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-info-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-content">
+                                        <h4>E-mail</h4>
+                                        <p>contato@natuni.com.br</p>
+                                        <a href="mailto:contato@natuni.com.br" class="btn btn-outline-primary btn-sm">
+                                            <i class="fas fa-envelope"></i> Enviar e-mail
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-info-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="contact-content">
+                                        <h4>Horário de Atendimento</h4>
+                                        <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-social">
+                                <h4>Siga-nos nas redes sociais</h4>
+                                <div class="social-links">
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-tiktok"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-7">
+                        <div class="contact-form-card">
+                            <div class="contact-form-header">
+                                <h3>Envie sua mensagem</h3>
+                                <p>Preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível.</p>
+                            </div>
+                            
+                            <form class="contact-form">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name">Nome Completo</label>
+                                            <input type="text" id="name" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="email">E-mail</label>
+                                            <input type="email" id="email" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="phone">Telefone</label>
+                                            <input type="tel" id="phone" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="subject">Assunto</label>
+                                            <select id="subject" class="form-control" required>
+                                                <option value="">Selecione um assunto</option>
+                                                <option value="produtos">Dúvidas sobre produtos</option>
+                                                <option value="pedido">Fazer um pedido</option>
+                                                <option value="suporte">Suporte técnico</option>
+                                                <option value="outros">Outros</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="message">Mensagem</label>
+                                            <textarea id="message" class="form-control" rows="5" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="privacy-policy" required>
+                                            <label class="form-check-label" for="privacy-policy">
+                                                Concordo com a <a href="#">Política de Privacidade</a> e com o uso dos meus dados para contato.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg">
+                                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="assets/images/logo-natuni.png" alt="Natuni" class="footer-logo">
+                        <p class="footer-description">
+                            Cuidando da sua saúde com produtos naturais de alta qualidade. 
+                            Sua jornada para uma vida mais saudável começa aqui.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://wa.me/5511999999999" class="social-link" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5 class="footer-title">Links Rápidos</h5>
+                        <ul class="footer-menu">
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#products">Produtos</a></li>
+                            <li><a href="#benefits">Benefícios</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5 class="footer-title">Produtos</h5>
+                        <ul class="footer-menu">
+                            <li><a href="produtos.html#magnati">Magnati</a></li>
+                            <li><a href="produtos.html#visionati">Visionati</a></li>
+                            <li><a href="#products">Combo Promoção</a></li>
+                            <li><a href="#products">Ofertas Especiais</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="footer-contact">
+                        <h5 class="footer-title">Contato</h5>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>(11) 99999-9999</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>contato@natuni.com.br</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Seg-Sex: 8h às 18h | Sáb: 8h às 12h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">
+                            © 2024 Natuni. Todos os direitos reservados.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-bottom-links">
+                            <a href="#">Política de Privacidade</a>
+                            <a href="#">Termos de Uso</a>
+                            <a href="#">FAQ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os produtos Natuni" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
