@@ -3,7 +3,7 @@
 const NATUNI_CONFIG = {
     // Informações de Contato
     whatsapp: {
-        number: "5511999999999", // Substitua pelo número real
+        number: "5511988128903", // Substitua pelo número real
         defaultMessage: "Olá! Gostaria de saber mais sobre os produtos Natuni"
     },
     
@@ -18,7 +18,7 @@ const NATUNI_CONFIG = {
     
     // Redes Sociais
     socialMedia: {
-        instagram: "https://instagram.com/natuni",
+        instagram: "https://instagram.com/natuni.suplementos",
         facebook: "https://facebook.com/natuni",
         youtube: "https://youtube.com/natuni"
     },
@@ -27,9 +27,9 @@ const NATUNI_CONFIG = {
     products: {
         magnati: {
             name: "Magnati",
-            price: 89.90,
-            oldPrice: 109.90,
-            installments: "3x de R$ 29,97",
+            price: 249.90,
+            oldPrice: 299.99,
+            installments: "10x de R$ 24,99",
             description: "Suplemento de magnésio de alta absorção",
             benefits: [
                 "Reduz cãibras musculares",
