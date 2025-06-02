@@ -1,5 +1,4 @@
 /* Reset CSS */
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +18,166 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.combo-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 2rem;
+    position: relative;
+}
+
+.combo-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.combo-products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.combo-extras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.combo-extra-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f8f9fa;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2c3e50;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.combo-extra-item i {
+    color: #2d5a27;
+}
+
+.combo-price-container {
+    margin-top: 2rem;
+}
+
+.combo-price {
+    margin-bottom: 1.5rem;
+}
+
+.price-comparison {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.price-separate {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+.price-combo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d5a27;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.combo-section {
+    margin-top: 3rem;
+}
+
+.combo-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 2rem;
+    position: relative;
+}
+
+.combo-header {
+    margin-bottom: 1.5rem;
+}
+
+.combo-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #ff8f00, #ff6f00);
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    animation: pulse 2s infinite;
+}
+
+.combo-title {
+    font-family: 'Merriweather', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.combo-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+.combo-description {
+    margin-bottom: 1.5rem;
+}
+
+.combo-description p {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.combo-benefits {
+    margin-bottom: 2rem;
+}
+
+
+.combo-benefits .benefit-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.combo-benefits .benefit-item i {
+    color: #2d5a27;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.combo-benefits .benefit-item span {
+    font-size: 1.05rem;
+    color: #2c3e50;
+}
+
+.combo-price-container {
+    margin-top: 2rem;
+}
+
+
 
 /* Tipografia */
 .section-title {
@@ -349,18 +508,19 @@ body {
     background: #ffffff;
 }
 
-.about-image img {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    transform: scale(1.05);
-}
-
 .about-image {
     position: relative;
     overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+    border-radius: 12px;
 }
 
 .about-image::before {
@@ -381,9 +541,36 @@ body {
     opacity: 1;
 }
 
-.about-image img:hover {
-    transform: scale(1.08);
+.about-image:hover img {
+    transform: scale(1.1);
     filter: brightness(1.05);
+}
+
+.about-decoration {
+    position: absolute;
+    z-index: -1;
+}
+
+.decoration-circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(124, 179, 66, 0.1);
+    bottom: -50px;
+    right: -50px;
+    z-index: -1;
+}
+
+.decoration-dots {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(#7cb342 2px, transparent 2px);
+    background-size: 15px 15px;
+    top: -30px;
+    left: -30px;
+    z-index: -1;
 }
 
 .about-content {
@@ -452,37 +639,43 @@ body {
 .product-image {
     position: relative;
     overflow: hidden;
-    height: 300px;
+    height: 250px; /* Reduzido de 300px para 250px */ /* Reduzido de 300px para 250px */ /* Reduzido de 300px para 250px */ /* Reduzido de 300px para 250px */
 }
 
 .product-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: all 0.3s ease;
+    padding: 20px;
 }
 
 .product-card:hover .product-image img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-.promo-seal {
+/*
+.product-badge {
     position: absolute;
     top: 10px;
     left: 10px;
-    background: #ff8f00;
-    color: #ffffff;
-    padding: 8px 12px;
-    border-radius: 50px;
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    z-index: 3;
+    width: 80px;
+    height: 80px;
+    background: url('assets/images/mais-vendidos.png') no-repeat center center;
+    background-size: contain;
+    z-index: 10;
     animation: pulse 2s infinite;
+    transform: rotate(-15deg);
 }
+
+.product-badge.badge-new {
+    background: url('https://cdn-icons-png.flaticon.com/512/3503/3503820.png') no-repeat center center;
+    background-size: contain;
+}
+
+.product-badge span {
+    display: none;
+}*/
 
 .product-content {
     padding: 2rem;
@@ -495,75 +688,344 @@ body {
     margin-bottom: 1rem;
 }
 
-.promo-banner {
-    background: linear-gradient(135deg, #ff8f00, #ff6f00);
-    color: #ffffff;
-    padding: 8px 12px;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    animation: slideInLeft 0.6s ease-out;
-}
-
 .product-description {
     color: #6c757d;
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
 
-.product-benefits ul {
-    list-style: none;
-    padding: 0;
+.product-benefits {
+    margin-bottom: 1.5rem;
 }
 
-.product-benefits li {
+.benefit-item {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
-    color: #6c757d;
 }
 
-.product-benefits li i {
+.benefit-item i {
     color: #7cb342;
     margin-right: 10px;
-    font-size: 0.9rem;
-}
-
-.product-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid #e9ecef;
 }
 
 .product-price {
     display: flex;
-    flex-direction: column;
-}
-
-.price-label {
-    font-size: 0.8rem;
-    color: #6c757d;
-    text-transform: uppercase;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .price-old {
     text-decoration: line-through;
     color: #6c757d;
-    font-size: 1rem;
-    margin-bottom: 0.2rem;
+    font-size: 1.1rem;
 }
 
-.price-value {
-    font-size: 1.5rem;
+.price-current {
+    font-size: 1.8rem;
     font-weight: 700;
     color: #2d5a27;
+    margin: 0 10px;
+}
+
+.price-discount {
+    background: #ff6f00;
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.product-actions {
+    margin-top: 1rem;
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.benefits-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/simbolo Suculenta.png');
+    background-size: 200px;
+    background-repeat: repeat;
+    opacity: 0.03;
+    z-index: 0;
+}
+
+.benefit-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(to right, #2d5a27, #7cb342);
+    border-image-slice: 1;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(45, 90, 39, 0.1) 0%, rgba(124, 179, 66, 0.1) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: all 0.3s ease;    position: relative;
+}
+
+/* Adicionando um ícone de folha atrás do ícone principal */
+.benefit-icon::before {
+    content: '\f06c'; /* Código do ícone de folha do Font Awesome */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    font-size: 2.5rem;
+    color: rgba(45, 90, 39, 0.1);
+    z-index: -1;
+    transform: rotate(-15deg) translateX(-5px);}
+
+/* Adicionando um ícone de folha atrás do ícone principal */
+.benefit-icon::before {
+    content: '\f06c'; /* Código do ícone de folha do Font Awesome */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    font-size: 2.5rem;
+    color: rgba(45, 90, 39, 0.1);
+    z-index: -1;
+    transform: rotate(-15deg) translateX(-5px);}
+
+/* Adicionando um ícone de folha atrás do ícone principal */
+.benefit-icon::before {
+    content: '\f06c'; /* Código do ícone de folha do Font Awesome */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    font-size: 2.5rem;
+    color: rgba(45, 90, 39, 0.1);
+    z-index: -1;
+    transform: rotate(-15deg) translateX(-5px);}
+
+.benefit-card:hover .benefit-icon {
+    background: linear-gradient(135deg, #2d5a27 0%, #7cb342 100%);
+}
+
+.benefit-icon i {
+    font-size: 2rem;
+    color: #2d5a27;
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover .benefit-icon i {
+    color: #ffffff;
+}
+
+.benefit-title {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.benefit-description {
+    color: #6c757d;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Footer Section */
+.footer-section {
+    background: linear-gradient(135deg, #1a4d1a 0%, #2d5a27 100%);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 80px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/simbolo Preto.png');
+    background-size: 200px;
+    background-repeat: repeat;
+    opacity: 0.05;
+    z-index: 0;
+}
+
+.footer-brand {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2rem;
+}
+
+.footer-logo {
+    margin-bottom: 1.5rem;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
+.footer-description {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: #ffffff;
+    color: #2d5a27;
+    transform: translateY(-3px);
+}
+
+.footer-title {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #7cb342;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 10px;
+}
+
+.footer-menu a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-menu a::before {
+    content: '→';
+    margin-right: 8px;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+
+.footer-menu a:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+.footer-menu a:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.contact-info {
+    margin-top: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.footer-bottom {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.copyright {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer-bottom-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.footer-bottom-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #ffffff;
 }
 
 /* WhatsApp Float Button */
@@ -707,217 +1169,7 @@ body {
     }
 }
 
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f8f9fa;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #2d5a27 0%, #7cb342 100%);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #2d5a27;
-}
-
-/* Combo Section */
-.combo-section {
-    margin-top: 3rem;
-}
-
-.combo-card {
-    background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    padding: 2rem;
-    position: relative;
-}
-
-.combo-header {
-    margin-bottom: 1.5rem;
-}
-
-.combo-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: linear-gradient(135deg, #ff8f00, #ff6f00);
-    color: #ffffff;
-    padding: 8px 16px;
-    border-radius: 30px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    animation: pulse 2s infinite;
-}
-
-.combo-title {
-    font-family: 'Merriweather', serif;
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #2c3e50;
-    margin-bottom: 0.5rem;
-}
-
-.combo-subtitle {
-    font-size: 1.2rem;
-    color: #6c757d;
-    margin-bottom: 1.5rem;
-}
-
-.combo-description {
-    margin-bottom: 1.5rem;
-}
-
-.combo-description p {
-    font-size: 1.1rem;
-    color: #2c3e50;
-    line-height: 1.6;
-}
-
-.combo-benefits {
-    margin-bottom: 2rem;
-}
-
-.combo-benefits .benefit-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.combo-benefits .benefit-item i {
-    color: #2d5a27;
-    margin-right: 10px;
-    font-size: 1.2rem;
-}
-
-.combo-benefits .benefit-item span {
-    font-size: 1.05rem;
-    color: #2c3e50;
-}
-
-.combo-price-container {
-    margin-top: 2rem;
-}
-
-.combo-price {
-    margin-bottom: 1.5rem;
-}
-
-.price-comparison {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0.5rem;
-}
-
-.price-separate {
-    font-size: 1.1rem;
-    color: #6c757d;
-    margin-bottom: 0.5rem;
-}
-
-.price-combo {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #2d5a27;
-    line-height: 1;
-    margin-bottom: 0.5rem;
-}
-
-.price-installment {
-    font-size: 1rem;
-    color: #6c757d;
-}
-
-.price-savings {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(45, 90, 39, 0.1);
-    color: #2d5a27;
-    padding: 8px 16px;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.combo-action {
-    margin-top: 1.5rem;
-}
-
-.combo-image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-.combo-products {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.combo-product {
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.combo-product:hover {
-    transform: translateY(-10px);
-}
-
-.combo-product img {
-    max-height: 300px;
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
-}
-
-.combo-plus {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #6c757d;
-    margin: 0 1.5rem;
-}
-
-.combo-extras {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.combo-extra-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: #f8f9fa;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #2c3e50;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.combo-extra-item i {
-    color: #2d5a27;
-}
-
-/* Testimonials Section */
+/* Testimonials Section - Depoimentos dos nossos clientes */
 .testimonials-section {
     background: #f8f9fa;
     padding: 80px 0;
@@ -1019,7 +1271,24 @@ html {
     margin-bottom: 1.5rem;
 }
 
-/* Contact Section */
+
+/* Contact Section - Entre em Contato */
+.contact-section {
+    padding: 80px 0;
+    background: #f0f4f7; /* Cor de fundo diferente para distinguir da seu00e7u00e3o de depoimentos */
+    position: relative;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(to right, #2d5a27, #7cb342);
+}
+
 .contact-section {
     padding: 80px 0;
     background: #ffffff;
@@ -1198,4 +1467,98 @@ html {
 
 .form-check-label a:hover {
     text-decoration: underline;
+}© 2024 Natuni. Todos os direitos reservados.
+
+
+/* Testimonials Section - Depoimentos dos nossos clientes */
+.testimonials-section {
+    padding: 80px 0;
+    background: #ffffff;
+    position: relative;
+}
+
+.testimonial-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+    position: relative;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content p {
+    font-style: italic;
+    color: #6c757d;
+    line-height: 1.8;
+}
+
+.testimonial-content::before {
+    content: '\201C';
+    font-family: Georgia, serif;
+    font-size: 4rem;
+    position: absolute;
+    left: -1rem;
+    top: -2rem;
+    color: rgba(45, 90, 39, 0.1);
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.author-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+    border: 3px solid #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.author-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-info h4 {
+    margin: 0;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.author-info p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.testimonial-rating {
+    color: #ffc107;
+    margin-top: 0.5rem;
+}    background: #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #2d5a27 0%, #7cb342 100%);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2d5a27;
 }
